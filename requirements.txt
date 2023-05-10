@@ -1,0 +1,4 @@
+neptune==1.1.1 
+scikit-learn==1.2.2 
+matplotlib==3.7.1
+prettytable==3.5.0
