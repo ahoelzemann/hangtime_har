@@ -5,6 +5,8 @@ The dataset was recorded for two teams from separate countries (USA and Germany)
 Particular features of this dataset include an inherent variance through cultural differences in game rules and styles as the data was recorded in two countries, as well as different sport skill levels, since the participants were heterogeneous in terms of prior basketball experience.
 We illustrate the dataset's features in several time-series analyses and report on a baseline classification performance study with two state-of-the-art deep learning architectures.
 
+Please visit our GitHub page for more detailed information: https://ahoelzemann.github.io/hangtime_har/index.html
+
 # Authors: 
   <strong>Alexander Hoelzemann</strong>, University of Siegen<br>
             Julia Lee Romero, University of Colorado Boulder<br>
