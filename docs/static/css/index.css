@@ -30,17 +30,11 @@ body {
 .publication-title {
 }
 
-.publication-banner {
-    max-height: parent;
-
-}
-
 .publication-banner video {
     position: relative;
     left: auto;
     top: auto;
     transform: none;
-    object-fit: fit;
 }
 
 .publication-header .hero-body {
