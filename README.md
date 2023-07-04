@@ -13,7 +13,7 @@ We illustrate the dataset's features in several time-series analyses and report 
             Qin Lv, University of Colorado Boulder<br>
             
 ## Download:
-Download our datasaet from: https://doi.org/10.5281/zenodo.7920485 or tbd
+Download our datasaet from: https://doi.org/10.5281/zenodo.7920485
 
 ## Acknowledgments
 We would like to thank the basketball players from the teams [TuS Fellinghausen](https://tus-fellinghausen.de/) from Kreuztal, Germany and the University of Colorado Boulder students for participating in our study.
