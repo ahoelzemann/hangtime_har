@@ -206,13 +206,10 @@
                         and 2dd9_na, ce9d_na, and c6f3_na (novices). The plot consists of 4 columns. (1) Raw data as
                         recorded during the dedicated dribbling drill (approx. 7 min of data (Germany) and 5 min of data
                         (USA). The X-axis is represented in red, the Y-axis in green, and the Z-axis in blue color. (2)
-                        Standard
-                        deviation (diamond shape), median, interquartile q1 and q3 (rectangle shape) as well as upper
-                        and
-                        lower fences. (3) Fast Four Transformation. (4) Local maxima (prominence = 1.4) calculated
+                        Standard deviation (diamond shape), median, interquartile q1 and q3 (rectangle shape) as well as upper
+                        and lower fences. (3) Fast Four Transformation. (4) Local maxima (prominence = 1.4) calculated
                         using the magnitude of the input signal (1), every red dot indicates a peak that is interpreted
-                        as one
-                        dribbling.
+                        as one dribbling.
                     </h2>
                 </div>
                 <div class="item">
@@ -222,16 +219,11 @@
                         Overall results of the deep learning experiments using a shallow DeepConvLSTM (blue)
                         and Attend-and-Discriminate architecture (orange). Both models were trained with a 1-layered
                         recurrent part with 1024 hidden units and a sliding window of 1 second with 50% overlap. The
-                        left
-                        plot (a) shows the per-class LOSO results obtained from training on the drill and warm-up data.
-                        The
-                        right plot (b) shows the per-class results predicting the game data when trained on the drill
-                        and
-                        warm-up data. All results are averages across 3 runs using a set of 3 random seeds. Both
-                        architectures
-                        suffer a significant loss in predictive performance when being applied to in-game data, i.e.,
-                        data
-                        recorded in an uncontrolled environment.
+                        left plot (a) shows the per-class LOSO results obtained from training on the drill and warm-up data.
+                        The right plot (b) shows the per-class results predicting the game data when trained on the drill
+                        and warm-up data. All results are averages across 3 runs using a set of 3 random seeds. Both
+                        architectures suffer a significant loss in predictive performance when being applied to in-game data, i.e.,
+                        data recorded in an uncontrolled environment.
                     </h2>
                 </div>
             </div>
@@ -274,10 +266,8 @@
                         Meta information as given through the study questionnaire by all participants, 13 from
                         Germany, Europe (eu) and 11 from USA, North America (na). A total of 3 participants were female
                         and 21 were male. The players were between 18 and 39 years old. Through self-assessment, in
-                        which
-                        participants were asked to evaluate their experience in basketball, 8 players responded with
-                        novice
-                        and 16 with expert. Two people were left-handed. Additional about the anthropomorphy of our
+                        which participants were asked to evaluate their experience in basketball, 8 players responded with
+                        novice and 16 with expert. Two people were left-handed. Additional about the anthropomorphy of our
                         participants are excluded due to restrictions given by the Ethical Council of our university.
                     </p>
                     <h3 class="title is-3">Dataset Characteristics</h3>
@@ -306,16 +296,16 @@
                         <u><a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html"
                               target="_blank">read_csv</a></u> from the Pandas library,
                         which is commonly used for data manipulation and analysis in Python.
-                        Once the dataset is loaded, the labels are stored in four different columns: Coarse, Locomotion,
-                        Basketball, and In/Out.
-                        The Coarse column separates the samples into different sessions, including warm-up, drills
+                        Once the dataset is loaded, the labels are stored in four different columns: coarse, locomotion,
+                        basketball, and in/out.
+                        The coarse column separates the samples into different sessions, including warm-up, drills
                         (sitting, standing, walking, running, dribbling, penalty shots, two-point shots, and three-point
                         shots), game, and in/out.
                         The "game" label indicates when a game was played. The German study comprises two game sessions,
                         each lasting approximately 10 minutes, while the study conducted in the USA consists of one
                         session lasting approximately 22 minutes.
-                        The Basketball and Locomotion tiers contain labels corresponding to different classes mentioned
-                        in the table, as well as the "not_labeled" label. The "not_labeled" label is assigned when the
+                        The basketball and locomotion tiers contain labels corresponding to different classes mentioned
+                        in the table below, as well as the "not_labeled" label. The "not_labeled" label is assigned when the
                         specific activity of a player couldn't
                         be observed in the ground truth video or between sessions. The In/Out tier is only relevant
                         during the game session and indicates whether a player is on the court or not.
@@ -325,38 +315,30 @@
                         between penalty_shots, two_point_shots, and three_point_shots by taking into account the coarse
                         layer. The locomotion layer holds the information if the activity dribbling was performed
                         while the player was standing, walking, or running. Therefore, the class definitions in
-                        aforementioned table only contain the basic classes and can be extended individuall, depending
-                        on the
-                        requirements of one’s project.
+                        following table only contain the basic classes and can be extended individually, depending
+                        on the requirements of one’s project.
                     </p>
                     <h3 class="title is-3">Classes</h3>
                     <img src="static/images/class_description.png" alt="Meta Information"/>
                     <p>Detailed class description for every class included in the dataset. The dataset is multi-tier
-                        labeled with 4 different layers (I) Coarse, (II) Locomotion, (III) Basketball, and (IV) In/Out.
-                        The
-                        coarse layer is not listed, since it is meant to indicate to which session an activity belongs.
-                        Relevant
-                        classes are classes 2–13. However, the classes in and out were not used in our validation.
+                        labeled with 4 different layers (I) coarse, (II) locomotion, (III) basketball, and (IV) in/out.
+                        The coarse layer is not listed, since it is meant to indicate to which session an activity belongs.
+                        Relevant classes are classes 2–13. However, the classes in and out were not used in our validation.
                     </p>
                     <img src="static/images/class_samples.png" alt="Class samples"/>
                     <p>
                         <b>Exemplar time-series</b> data for the included activities. The examples shown for the
-                        periodic
-                        activities sitting , standing, walking, running, and dribbling contain 1200 samples (approx. 24
-                        s). In
-                        order to better represent the complex activities shot and layup as well as the micro-activities
-                        pass and
-                        rebound. Jumps are marked in classes where the activity occurs. Such short periods were
-                        summarized
-                        in the activity jumping.
+                        periodic activities sitting , standing, walking, running, and dribbling contain 1200 samples (approx. 24
+                        s). In order to better represent the complex activities shot and layup as well as the micro-activities
+                        pass and rebound. Jumps are marked in classes where the activity occurs. Such short periods were
+                        summarized in the activity jumping.
                     </p>
                     <img src="static/images/class_distribution.png" alt="Class distribution"/>
                     <p>
                         <b>Class distribution</b> of the Hang-Time HAR dataset. Total number of samples per class are:
                         sitting : 383,622 (~2.1 h), standing: 368,189 (~2.0 h), walking: 1,885,644 (~10.5 h), running:
                         1,100,942 (~6.1 h), jumping: 96,857 (~0.53 h), dribbling: 878,514 (~4,8 h), shot: 149,040 (~0.82
-                        h),
-                        layup: 62,393 (~0.34 h), pass: 86,291 (~0.47 h), and rebound: 18,886 (~0.10 h). In total:
+                        h), layup: 62,393 (~0.34 h), pass: 86,291 (~0.47 h), and rebound: 18,886 (~0.10 h). In total:
                         5,030,378 labeled samples or ~27.7 h of data
                     </p>
 
@@ -383,7 +365,6 @@
             <div class="column is-four-fifths">
                 <h2 class="title is-3">Results</h2>
                 <div class="content has-text-justified">
-                    <p>
                         During our experiments, we are investigating how well our network generalizes in two regards:
                     <ul>
                         <li>Subject-independent generalization: As with almost any activity, basketball players tend
@@ -427,7 +408,7 @@
                     <br>
                     <br>
                     <b>All important links</b> can be found at the <a href="#download">top</a> of the page.
-                    </p>
+
                 </div>
             </div>
         </div>
